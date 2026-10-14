@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#080b14" />
+  <title>Frame — Curated Image Gallery</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">F</span> frame<span class="brand-dot">.</span></a>
+    <nav><a class="active" href="#gallery">Discover</a><a href="#about">About</a></nav>
+    <span class="status"><i></i> Curated collection</span>
+  </header>
+  <main>
+    <section class="hero">
+      <p class="eyebrow"><span></span> VISUAL JOURNAL / VOL. 01</p>
+      <h1>Every frame tells<br><em>a different story.</em></h1>
+      <p class="hero-copy">A thoughtfully curated collection of places, textures, and quiet moments.</p>
+      <div class="hero-meta"><span>01 — 12 SELECTED FRAMES</span><span>SCROLL TO EXPLORE ↓</span></div>
+    </section>
+    <section id="gallery" class="gallery-section">
+      <div class="section-head"><div><p class="eyebrow">THE COLLECTION</p><h2>Visual explorations</h2></div>
+        <div class="filters" role="group" aria-label="Filter gallery">
+          <button class="filter active" data-filter="all">All work <span>12</span></button>
+          <button class="filter" data-filter="nature">Nature</button><button class="filter" data-filter="architecture">Architecture</button><button class="filter" data-filter="travel">Travel</button>
+        </div>
+      </div>
+      <div class="gallery" id="galleryGrid"></div>
+    </section>
+    <section id="about" class="closing"><span class="brand-mark">F</span><div><p class="eyebrow">A STUDY IN SEEING</p><h2>Keep looking.<br><em>Find something new.</em></h2></div><p>Built with curiosity, crafted for the web.</p></section>
+  </main>
+  <footer><span>© 2026 FRAME STUDIO</span><span>DESIGNED WITH INTENTION · BUILT WITH HTML, CSS & JS</span></footer>
+  <div class="lightbox" id="lightbox" aria-hidden="true"><button class="close" aria-label="Close image">×</button><button class="light-nav prev" aria-label="Previous image">←</button><figure><img id="lightboxImage" alt=""><figcaption><span id="lightboxTitle"></span><small id="lightboxCount"></small></figcaption></figure><button class="light-nav next" aria-label="Next image">→</button></div>
+  <script src="script.js"></script>
+</body>
+</html>
